@@ -8,7 +8,7 @@ const Home = () => {
 
   const API_ID = '211fb2af'; // Replace with your APP_ID
   const API_KEY = '50511b2ae574de50b6952a976ee03185'; // Replace with your APP_KEY (no extra spaces/newlines)
-  const USER_ID = 'your_user_id'; // Replace with your actual User ID
+  // const USER_ID = 'your_user_id'; // Replace with your actual User ID
 
   const fetchRecipes = async () => {
     if (!query.trim()) {
