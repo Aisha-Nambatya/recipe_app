@@ -1,38 +1,111 @@
-.App {
+/* General Styling */
+body {
+  font-family: 'Pacifico', cursive; /* Foodie-styled font */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #eafaf1; /* Light green background */
+  color: #2f4f4f; /* Dark greenish-gray text for better contrast */
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #228B22; /* Forest green for the heading */
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 350px;
+  border: 2px solid #32cd32; /* Lime green border */
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  background: #228b22; /* Forest green button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #006400; /* Dark green for hover */
+}
+
+/* Recipe Container */
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1300px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  width: 300px; /* Slightly larger card dimensions */
+  background: #f5fff5; /* Soft green-tinted white background */
+  border: 2px solid #32cd32; /* Lime green border */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px; /* Slightly taller images */
+  object-fit: cover;
+  border-bottom: 2px solid #32cd32; /* Green border below image */
+}
+
+.recipe-card h3 {
+  padding: 15px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #228B22; /* Forest green for card titles */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-card p {
+  padding: 0 15px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #555; /* Subtle gray for descriptions */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.recipe-card a {
+  display: block;
+  padding: 12px;
+  background: #32cd32; /* Lime green for link buttons */
   color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-top: 2px solid #228b22; /* Top border to separate content */
+  border-radius: 0 0 15px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-card a:hover {
+  background: #006400; /* Darker green for hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
